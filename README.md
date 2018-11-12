@@ -1,2 +1,2 @@
 # gatsby-ssr
-Boilerplate for gatsby ssr
+Boilerplate for nextjs ssr
