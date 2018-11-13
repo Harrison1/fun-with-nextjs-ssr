@@ -1,0 +1,19 @@
+{
+  "name": "fun-with-nextjs-ssr",
+  "version": "1.0.0",
+  "description": "NextJS SSR with WordPress",
+  "main": "index.js",
+  "repository": "https://github.com/Harrison1/fun-with-nextjs-ssr.git",
+  "author": "Harrison <hmcguire13@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}

@@ -1,2 +1,2 @@
-# gatsby-ssr
-Boilerplate for nextjs ssr
+# NextJS SSR with WordPress
+Boilerplate for nextjs ssr with wordpress
