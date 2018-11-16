@@ -1,6 +1,6 @@
 import About from '../components/App'
 
-const Index = () => 
+const AboutPage = () => 
   <About />
 
-export default About
+export default AboutPage
