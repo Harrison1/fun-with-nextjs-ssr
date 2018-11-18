@@ -1,9 +1,9 @@
 {
-  "name": "fun-with-nextjs-ssr",
+  "name": "nextjs-ssr-wordpress",
   "version": "1.0.0",
   "description": "NextJS SSR with WordPress",
   "main": "index.js",
-  "repository": "https://github.com/Harrison1/fun-with-nextjs-ssr.git",
+  "repository": "https://github.com/Harrison1/nextjs-ssr-wordpress.git",
   "author": "Harrison <hmcguire13@gmail.com>",
   "license": "MIT",
   "scripts": {
