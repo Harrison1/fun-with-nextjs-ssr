@@ -1,7 +1,7 @@
 import React from 'react';
 
-const App = () =>
-  <h1>Hello Galaxy</h1>
+const App = props =>
+  <h1>{ props.data[0].title.rendered }</h1>
 
 export default App
   
