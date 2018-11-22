@@ -1,7 +1,7 @@
 import React from 'react';
+import Blogroll from './Blogroll'
 
 const App = props =>
-  <h1>{ props.data[0].title.rendered }</h1>
+  <Blogroll posts={ props.data } />
 
 export default App
-  
