@@ -1,6 +1,4 @@
 import React from 'react'
-import Excerpt from './Excerpt'
-import Title from './Title'
 
 const BlogCard = ({ excerpt, featuredmedia, title }) =>
   <article>
@@ -14,6 +12,9 @@ const BlogCard = ({ excerpt, featuredmedia, title }) =>
         align-items: flex-start;
         display: flex;
         margin-bottom: 1rem;
+      }
+      img {
+        border-radius: 5px;
       }
     `}</style>
   </article>

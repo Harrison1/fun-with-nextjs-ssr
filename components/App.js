@@ -1,7 +1,13 @@
-import React from 'react';
+import React from 'react'
+import Header from './Header'
 import Blogroll from './Blogroll'
+import Footer from './Footer'
 
 const App = props =>
-  <Blogroll posts={ props.data } />
+  <>
+    <Header />
+    <Blogroll posts={ props.data } />
+    <Footer />
+  </>
 
 export default App

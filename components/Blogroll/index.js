@@ -10,6 +10,19 @@ const Blogroll = ({ posts }) =>
         featuredmedia={p._embedded['wp:featuredmedia'][0]} 
         title={p.title.rendered} 
       />)}
+    <style jsx>{`
+      section {
+        margin: auto;
+        max-width: 1200px;
+        padding: 0 20px;
+        width: 100%;
+      }
+      @media (min-width: 1200px) {
+        section {
+          padding: 0;
+        }
+      }
+    `}</style>  
   </section>
 
 export default Blogroll

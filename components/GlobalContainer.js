@@ -175,9 +175,9 @@ const GlobalContainer = ({ children }) =>
 
     svg {
       overflow: hidden;
+      text-rendering: optimizeLegibility;
       vertical-align: middle;
     }
-
     table {
       border-collapse: collapse;
     }
