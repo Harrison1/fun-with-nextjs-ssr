@@ -5,9 +5,7 @@ import GlobalContainer from '../components/GlobalContainer'
 import endpoints from '../config'
 
 const Index = props => 
-  <GlobalContainer>
-    <App data={ props.posts } />
-  </GlobalContainer>
+  <App data={ props.posts } />
 
 Index.getInitialProps = async ({ req }) => {
   const res = await fetch(`${endpoints.dev}/wp-json/wp/v2/posts?_embed`)

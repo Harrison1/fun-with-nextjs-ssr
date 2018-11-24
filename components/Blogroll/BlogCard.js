@@ -1,12 +1,17 @@
 import React from 'react'
+import Link from 'next/link'
 
-const BlogCard = ({ excerpt, featuredmedia, title }) =>
+const BlogCard = ({ excerpt, featuredmedia, slug, title }) =>
   <article>
-    <img src={featuredmedia.media_details.sizes.thumbnail.source_url} alt={title} />
-    <div>
-      <h3>{ title }</h3>
-      <p>{ excerpt } </p>
-    </div>
+    <Link href={`/post?title=${title}`}>
+      <a>
+        <img src={featuredmedia.media_details.sizes.thumbnail.source_url} alt={title} />
+        <div>
+          <h3>{ title }</h3>
+          <p>{ excerpt } </p>
+        </div>
+      </a>
+    </Link>
     <style jsx>{`
       article {
         align-items: flex-start;

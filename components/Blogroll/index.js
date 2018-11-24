@@ -7,7 +7,8 @@ const Blogroll = ({ posts }) =>
       <BlogCard 
         key={p.id} 
         excerpt={p.excerpt.rendered} 
-        featuredmedia={p._embedded['wp:featuredmedia'][0]} 
+        featuredmedia={p._embedded['wp:featuredmedia'][0]}
+        slug={p.slug}
         title={p.title.rendered} 
       />)}
     <style jsx>{`
