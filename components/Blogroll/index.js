@@ -8,6 +8,7 @@ const Blogroll = ({ posts }) =>
         key={p.id} 
         excerpt={p.excerpt.rendered} 
         featuredmedia={p._embedded['wp:featuredmedia'][0]}
+        id={p.id}
         slug={p.slug}
         title={p.title.rendered} 
       />)}

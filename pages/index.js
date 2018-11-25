@@ -1,7 +1,6 @@
 
 import fetch from 'isomorphic-unfetch'
 import App from '../components/App'
-import GlobalContainer from '../components/GlobalContainer'
 import endpoints from '../config'
 
 const Index = props => 

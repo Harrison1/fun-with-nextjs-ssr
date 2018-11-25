@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 
-const BlogCard = ({ excerpt, featuredmedia, slug, title }) =>
+const BlogCard = ({ excerpt, featuredmedia, id, slug, title }) =>
   <article>
-    <Link href={`/post?title=${title}`}>
+    <Link as={`/p/${slug}`} href={`/post?id=${id}`}>
       <a>
         <img src={featuredmedia.media_details.sizes.thumbnail.source_url} alt={title} />
         <div>
