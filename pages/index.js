@@ -8,8 +8,8 @@ const Index = props =>
 
 Index.getInitialProps = async ({ req }) => {
   const res = await fetch(`${endpoints.dev}/wp-json/wp/v2/posts?_embed`)
-  const json = await res.json()
-  return { posts: json }
+  const posts = await res.json()
+  return { posts }
 }
 
 export default Index
