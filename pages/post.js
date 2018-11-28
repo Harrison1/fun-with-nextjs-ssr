@@ -1,11 +1,14 @@
 import fetch from 'isomorphic-unfetch'
 import Layout from '../components/Layout'
+import PostContent from '../components/shared/PostContent'
 import endpoints from '../config'
 
 const Post = props => 
   <Layout>
-    <h1>{props.post[0].title.rendered}</h1>
-    { <div dangerouslySetInnerHTML={{__html: props.post[0].content.rendered}} /> }
+    <PostContent>
+      <h1>{props.post[0].title.rendered}</h1>
+      <div dangerouslySetInnerHTML={{__html: props.post[0].content.rendered}} />
+    </PostContent>
   </Layout>
 
 Post.getInitialProps = async (ctx) => {
