@@ -9,11 +9,14 @@ app.prepare()
 .then(() => {
   const server = express()
 
-  server.get('/p/:id', (req, res) => {
+  server.get('/', (req, res) => {
+    const actualPage = '/index'
+    app.render(req, res, actualPage)
+  })
+
+  server.get('/p/:slug', (req, res) => {
     const actualPage = '/post'
-    const queryParams = { id: req.params.id }
-    console.log('hellllooooo')
-    console.log(queryParams)
+    const queryParams = { slug: req.params.slug }
     app.render(req, res, actualPage, queryParams)
   })
 
