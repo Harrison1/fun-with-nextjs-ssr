@@ -1,10 +1,15 @@
 import React from 'react'
+import Link from 'next/link'
 import List from './List'
 import Logo from '../assets/Logo'
 
 const Content = ({ children }) =>
   <div>
-    <Logo />
+    <Link href={`/`}>
+      <a>
+        <Logo />
+      </a>
+    </Link>
     <List />
     <style jsx>{`
       div {

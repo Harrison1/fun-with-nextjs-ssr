@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const BlogCard = ({ excerpt, featuredmedia, id, slug, title }) =>
   <article>
-    <Link as={`/p/${slug}`} href={`/post?slug=${slug}`}>
+    <Link as={`/${slug}`} href={`/post?slug=${slug}`}>
       <a>
         <img src={featuredmedia.media_details.sizes.thumbnail.source_url} alt={title} />
         <div>

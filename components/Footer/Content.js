@@ -1,10 +1,15 @@
 import React from 'react'
+import Link from 'next/link'
 import List from './List'
 import LogoWhite from '../assets/LogoWhite'
 
 const Content = ({ children }) =>
   <div>
-    <LogoWhite />
+    <Link href={`/`}>
+      <a>
+        <LogoWhite />
+      </a>
+    </Link>
     <List />
     <style jsx>{`
       div {

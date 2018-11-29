@@ -14,7 +14,7 @@ app.prepare()
     app.render(req, res, actualPage)
   })
 
-  server.get('/p/:slug', (req, res) => {
+  server.get('/:slug', (req, res) => {
     const actualPage = '/post'
     const queryParams = { slug: req.params.slug }
     app.render(req, res, actualPage, queryParams)
