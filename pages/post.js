@@ -1,4 +1,5 @@
 import fetch from 'isomorphic-unfetch'
+import Link from 'next/link'
 import Layout from '../components/Layout'
 import PostContent from '../components/shared/PostContent'
 import endpoints from '../config'

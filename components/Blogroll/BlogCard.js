@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 
-const BlogCard = ({ excerpt, featuredmedia, id, slug, title }) =>
+const BlogCard = ({ excerpt, featuredmedia, slug, title }) =>
   <article>
-    <Link as={`/${slug}`} href={`/post?slug=${slug}`}>
+    <Link prefetch as={`/${slug}`} href={`/post?slug=${slug}`}>
       <a>
         <img src={featuredmedia.media_details.sizes.thumbnail.source_url} alt={title} />
         <div>

@@ -6,7 +6,7 @@ import endpoints from '../config'
 const Index = props => 
   <App data={ props.posts } />
 
-Index.getInitialProps = async () => {
+Index.getInitialProps = async ({ req }) => {
   const res = await fetch(`${endpoints.dev}/wp-json/wp/v2/posts?_embed`)
   const posts = await res.json()
   return { posts }
