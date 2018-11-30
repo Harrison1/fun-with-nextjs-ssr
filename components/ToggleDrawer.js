@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import Button from './80sBaby/Button'
 import Drawer from './80sBaby/Drawer'
-import Portal from './80sBaby/Portal'
 
 class ToggleDrawer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      open: false
+      open: false,
+      slide: false
     }
 
     this.toggleDrawer = this.toggleDrawer.bind(this)
@@ -15,7 +15,8 @@ class ToggleDrawer extends Component {
 
   toggleDrawer() {
     this.setState(state => ({
-      open: !state.open
+      open: true,
+      slide: !state.slide
     }));
   }
 
@@ -29,7 +30,7 @@ class ToggleDrawer extends Component {
           text='Menu'
           type='button'
         />
-        <Drawer open={ this.state.open } />
+        <Drawer open={ this.state.open } slide={ this.state.slide } />
       </>
     )
   }
