@@ -9,24 +9,20 @@ const Button = props =>
     onClick={props.onClick}
     type={props.type}
     value={props.value}>
-    <div></div>
-    { props.text }
+    <div>
+      { props.text }
+    </div>
     <style jsx>{`
       button {
-        background: none;
+        background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
         border: none;
-      }
-      button {
-        border: 2px solid purple;
         border-radius: 10px;
         cursor: pointer;
         outline: none;
-        padding: 20px 20px;
-      }
-      button:hover {
-        background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        padding: 2px;
         background-size: 400% 400%;
-        color: #ffffff;
+      }
+      button:hover {0%;
         animation: gradient 15s ease infinite;
       }
       button:active, 
@@ -34,6 +30,11 @@ const Button = props =>
       button:visited {
         border: 2px dashed purple;
         outline: none;
+      }
+      div {
+        background: #fff;
+        border-radius: 10px;
+        padding: 10px 20px;
       }
       @keyframes gradient {
         0% {
