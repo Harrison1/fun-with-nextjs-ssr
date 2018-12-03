@@ -6,7 +6,7 @@ const PostContent = ({ children }) =>
       { children }
     </article>
     <style jsx>{`
-      :global(h1) {
+      :global(h1, h2) {
         margin: auto;
         max-width: 768px;
       }
