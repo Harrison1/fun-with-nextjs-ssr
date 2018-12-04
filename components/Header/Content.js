@@ -2,18 +2,20 @@ import React from 'react'
 import Link from 'next/link'
 import List from './List'
 import Logo from '../assets/Logo'
+import NotchLogo from '../80sBaby/NotchLogo'
+import NotchList from '../80sBaby/NotchList'
 
 const Content = ({ children }) =>
   <div>
     <Link href={`/`}>
       <a>
-        <Logo />
+        <NotchLogo />
       </a>
     </Link>
-    <List />
+    <NotchList />
     <style jsx>{`
       div {
-        align-items: center;
+        // align-items: center;
         display: flex;
         justify-content: space-between;
         margin: auto;

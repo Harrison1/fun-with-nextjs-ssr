@@ -1,10 +1,11 @@
 import React from 'react'
 import Container from './Container'
 import Content from './Content'
+import NotchHeaderContainer from '../80sBaby/NotchHeaderContainer'
 
 const Header = () => 
-  <Container>
+  <NotchHeaderContainer>
     <Content />
-  </Container>
+  </NotchHeaderContainer>
 
 export default Header
