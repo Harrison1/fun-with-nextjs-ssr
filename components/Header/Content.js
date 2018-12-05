@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import List from './List'
 import Logo from '../assets/Logo'
+import MenuButton from '../80sBaby/MenuButton'
 import NotchLogo from '../80sBaby/NotchLogo'
 import NotchList from '../80sBaby/NotchList'
 
@@ -12,10 +13,10 @@ const Content = ({ children }) =>
         <NotchLogo />
       </a>
     </Link>
-    <NotchList />
+    <MenuButton />
     <style jsx>{`
       div {
-        // align-items: center;
+        align-items: center;
         display: flex;
         justify-content: space-between;
         margin: auto;
