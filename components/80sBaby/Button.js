@@ -22,7 +22,7 @@ const Button = props =>
         padding: 2px;
         background-size: 400% 400%;
       }
-      button:hover {0%;
+      button:hover {
         animation: gradient 15s ease infinite;
       }
       button:active, 

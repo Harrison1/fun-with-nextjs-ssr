@@ -7,7 +7,7 @@ import ToggleDrawer from './ToggleDrawer'
 
 const App = props =>
   <Layout>
-    <FeaturedImage />
+    <FeaturedImage src={'https://images4.alphacoders.com/946/94606.jpg'} alt="Metroid" />
     <Blogroll posts={ props.data } />
     <Drawer />
     <ToggleDrawer />

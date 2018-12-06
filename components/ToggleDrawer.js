@@ -30,7 +30,7 @@ class ToggleDrawer extends Component {
           text='Menu'
           type='button'
         />
-        <Drawer open={ this.state.open } slide={ this.state.slide } />
+        <Drawer onClick={this.toggleDrawer} open={ this.state.open } slide={ this.state.slide } />
       </>
     )
   }

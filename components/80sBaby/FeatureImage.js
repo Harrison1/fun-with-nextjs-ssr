@@ -1,8 +1,8 @@
 import React from 'react'
 
-const FeaturedImage = () =>
+const FeaturedImage = ({ alt, src }) =>
   <div>
-    <img src="https://images4.alphacoders.com/946/94606.jpg" alt="Metroid" />
+    <img src={ src } alt={ alt } />
     <style jsx>{`
       img {
         display: block;

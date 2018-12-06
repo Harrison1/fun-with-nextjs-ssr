@@ -1,12 +1,14 @@
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
+import FeaturedImage from '../components/80sBaby/FeatureImage'
 import Layout from '../components/Layout'
 import PostContent from '../components/shared/PostContent'
 import endpoints from '../config'
 
 const Post = props => 
-  <Layout>
+  <Layout>    
     <PostContent>
+      <FeaturedImage src={props.post[0].acf.featured_image} alt={props.post[0].title.rendered} />
       <h1>{props.post[0].title.rendered}</h1>
       <div dangerouslySetInnerHTML={{__html: props.post[0].content.rendered}} />
     </PostContent>

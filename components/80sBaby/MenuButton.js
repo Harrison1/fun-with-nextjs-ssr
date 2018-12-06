@@ -18,18 +18,32 @@ const MenuButton = ({ onClick }) =>
       }
       .outer-circle {
         align-items: center;
-        border: 4px solid rebeccapurple;
+        background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        background-size: 400% 400%;
+        border: none;
         border-radius: 50%;
         display: flex;
         height: 34px;
         justify-content: center;
         width: 34px;
+        animation: gradient 15s ease infinite;
       }
       .inner-circle {
-        background: rebeccapurple;
+        background: #fff;
         border-radius: 50%;
-        height: 8px;
-        width: 8px;
+        height: 24px;
+        width: 24px;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%
+        }
+        50% {
+          background-position: 100% 50%
+        }
+        100% {
+          background-position: 0% 50%
+        }
       }
     `}</style>
   </button>

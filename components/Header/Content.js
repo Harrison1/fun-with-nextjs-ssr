@@ -5,6 +5,7 @@ import Logo from '../assets/Logo'
 import MenuButton from '../80sBaby/MenuButton'
 import NotchLogo from '../80sBaby/NotchLogo'
 import NotchList from '../80sBaby/NotchList'
+import ToggleMenu from '../80sBaby/ToggleMenu'
 
 const Content = ({ children }) =>
   <div>
@@ -13,7 +14,7 @@ const Content = ({ children }) =>
         <NotchLogo />
       </a>
     </Link>
-    <MenuButton />
+    <ToggleMenu />
     <style jsx>{`
       div {
         align-items: center;
