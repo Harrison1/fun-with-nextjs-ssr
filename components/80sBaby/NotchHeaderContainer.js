@@ -7,6 +7,7 @@ const NotchHeaderContainer = ({ children }) =>
       header {
         position: fixed;
         width: 100%;
+        z-index: 50;
       }
     `}</style>
   </header>
