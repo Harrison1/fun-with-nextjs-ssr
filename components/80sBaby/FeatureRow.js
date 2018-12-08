@@ -31,24 +31,45 @@ const FeatureRow = props =>
           <div>
             <img src={i.src} alt={i.alt}/>
           </div>
+          <div className="post-title">
+            <h3>{i.alt}</h3>
+          </div>
         </a>
       </article> 
     )}
     <style jsx>{`
       article {
+        border: 5px solid transparent;
+        border-radius: 15px;
+        height: 70vh;
         overflow: hidden;
+        position: relative;
         width: 25%;
+        transition: width 0.75s ease-in-out;
+      }
+      article:hover {
+        width: 80%
       }
       article:hover img {
-        transform: scale(1.04);
-        transition: transform .75s ease-in-out;
+        transform: scale(1.04) translateX(-50%);
+        transition: transform 0.75s ease-in-out;
       }
       img {
-        transition: transform .5s ease-out;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        transition: transform 0.75s ease-out;
+      }
+      .post-title {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
       }
       .wrapper {
         display: flex;
-        height: 80vh;
+        height: 70vh;
         width: 100%;
       }
     `}</style>

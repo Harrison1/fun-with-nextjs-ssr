@@ -9,7 +9,7 @@ const BlogCard = ({ excerpt, featuredmedia, slug, title }) =>
           <img src={featuredmedia.media_details.sizes.thumbnail.source_url} alt={title} />
           <div>
             <h3>{ title }</h3>
-            <p>{ excerpt } </p>
+            <div dangerouslySetInnerHTML={{__html: excerpt}} />
           </div>
         </div>
       </a>
