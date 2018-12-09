@@ -33,6 +33,11 @@ const PostContent = ({ children }) =>
       :global(.wp-block-gallery>li>figure>img) {
         max-width: 100%;
       }
+      :global(.wp-block-image.alignfull img) {
+        display: block;
+        width: 100vw;
+      }
+      
     `}</style>
   </section>
 
