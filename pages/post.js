@@ -22,3 +22,7 @@ Post.getInitialProps = async (ctx) => {
 }
 
 export default Post
+
+// note for category search
+// i want to filter by category name and not id
+// /wp-json/wp/v2/posts?categories=2&_embed
