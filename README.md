@@ -15,3 +15,21 @@ remove_filter( 'the_excerpt', 'wpautop' );
 ```
 open -a Google\ Chrome --args --disable-web-security --user-data-dir=""
 ```
+
+### Simple Custom Post Type from the WP Documentation
+```
+function create_post_type() {
+  register_post_type( 'acme_product',
+    array(
+      'labels' => array(
+        'name' => __( 'Products' ),
+        'singular_name' => __( 'Product' )
+      ),
+      'public' => true,
+	  'show_in_rest' => true,
+      'has_archive' => true,
+    )
+  );
+}
+add_action( 'init', 'create_post_type' );
+```
