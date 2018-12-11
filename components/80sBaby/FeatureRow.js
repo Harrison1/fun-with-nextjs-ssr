@@ -23,16 +23,16 @@ const images = [
   },
 ]
 
-const FeatureRow = props =>
+const FeatureRow = ({ features }) =>
   <div className='wrapper'>
-    {images.map(i =>
+    {features.map(i =>
       <article>
         <a href={i.link}>
           <div>
-            <img src={i.src} alt={i.alt}/>
+            <img src={i._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url} alt={i.title.rendered}/>
           </div>
           <div className="post-title">
-            <h3>{i.alt}</h3>
+            <h3>{i.title.rendered}</h3>
           </div>
         </a>
       </article> 
@@ -48,7 +48,7 @@ const FeatureRow = props =>
         transition: width 0.75s ease-in-out;
       }
       article:hover {
-        width: 80%
+        // width: 80%
       }
       article:hover img {
         transform: scale(1.04) translateX(-50%);
