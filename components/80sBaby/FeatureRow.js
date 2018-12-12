@@ -62,7 +62,7 @@ const FeatureRow = ({ features }) =>
       .post-title {
         color: #fff;
         background: rgba(0, 0, 0, 0.5);
-        padding: 10px;
+        padding: 15px;
         position: absolute;
         bottom: 0;
         width: 100%;
