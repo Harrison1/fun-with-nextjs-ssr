@@ -12,6 +12,7 @@ const BlogCard = ({ excerpt, featuredmedia, slug, title }) =>
             <div dangerouslySetInnerHTML={{__html: excerpt}} />
           </div>
         </div>
+        <hr />
       </a>
     </Link>
     <style jsx>{`
@@ -20,7 +21,7 @@ const BlogCard = ({ excerpt, featuredmedia, slug, title }) =>
       }
       article {
         align-items: flex-start;
-        border-bottom: 2px solid #f2f2f2;
+        // border-bottom: 2px solid #f2f2f2;
         display: flex;
         margin: auto;  
         margin-bottom: 30px;
@@ -32,9 +33,28 @@ const BlogCard = ({ excerpt, featuredmedia, slug, title }) =>
         border-radius: 5px;
         display: flex;
       }
+      hr {
+        background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        background-size: 400% 400%;
+        border: none;
+        height: 1px;
+        outline: none;
+        animation: gradient 30s ease infinite;
+      }
       img {
         border-radius: 5px;
         margin-right: 15px;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%
+        }
+        50% {
+          background-position: 100% 50%
+        }
+        100% {
+          background-position: 0% 50%
+        }
       }
     `}</style>
   </article>

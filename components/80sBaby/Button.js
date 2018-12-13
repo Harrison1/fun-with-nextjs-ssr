@@ -15,12 +15,12 @@ const Button = props =>
     <style jsx>{`
       button {
         background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        background-size: 400% 400%;
         border: none;
         border-radius: 10px;
         cursor: pointer;
         outline: none;
         padding: 2px;
-        background-size: 400% 400%;
       }
       button:hover {
         animation: gradient 15s ease infinite;
