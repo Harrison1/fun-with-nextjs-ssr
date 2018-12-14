@@ -6,7 +6,7 @@ yarn
 yarn dev
 ```
 
-### functions.php additions
+### functions.php additions (currently removed)
 ```
 remove_filter( 'the_excerpt', 'wpautop' );
 ```
