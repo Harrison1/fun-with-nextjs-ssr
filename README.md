@@ -11,7 +11,7 @@ yarn dev
 remove_filter( 'the_excerpt', 'wpautop' );
 ```
 
-### Mac Run Chrome security disabled for local routing testing
+### Mac: terminal command to run chrome with security disabled for local routing testing
 ```
 open -a Google\ Chrome --args --disable-web-security --user-data-dir=""
 ```
