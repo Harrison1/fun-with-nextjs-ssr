@@ -10,6 +10,7 @@ import DarthVader from './assets/DarthVader'
 import Book from './assets/Book'
 import BobaFett from './assets/BobaFett'
 import DeathStar from './assets/DeathStar'
+import ATAT from './assets/ATAT'
 
 const App = props =>
   <Layout>
@@ -22,6 +23,7 @@ const App = props =>
     <Book />
     <BobaFett />
     <DeathStar />
+    <ATAT />
   </Layout>
 
 export default App
