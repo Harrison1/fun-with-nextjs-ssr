@@ -11,6 +11,7 @@ import Book from './assets/Book'
 import BobaFett from './assets/BobaFett'
 import DeathStar from './assets/DeathStar'
 import ATAT from './assets/ATAT'
+import R2D2 from './assets/R2D2'
 
 const App = props =>
   <Layout>
@@ -24,6 +25,7 @@ const App = props =>
     <BobaFett />
     <DeathStar />
     <ATAT />
+    <R2D2 />
   </Layout>
 
 export default App
