@@ -12,6 +12,7 @@ import BobaFett from './assets/BobaFett'
 import DeathStar from './assets/DeathStar'
 import ATAT from './assets/ATAT'
 import R2D2 from './assets/R2D2'
+import MillenniumFalcon from './assets/MillenniumFalcon'
 
 const App = props =>
   <Layout>
@@ -26,6 +27,7 @@ const App = props =>
     <DeathStar />
     <ATAT />
     <R2D2 />
+    <MillenniumFalcon />
   </Layout>
 
 export default App
