@@ -13,6 +13,7 @@ import DeathStar from './assets/DeathStar'
 import ATAT from './assets/ATAT'
 import R2D2 from './assets/R2D2'
 import MillenniumFalcon from './assets/MillenniumFalcon'
+import Stormtrooper from './assets/Stormtrooper'
 
 const App = props =>
   <Layout>
