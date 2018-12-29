@@ -29,6 +29,7 @@ const App = props =>
     <ATAT />
     <R2D2 />
     <MillenniumFalcon />
+    <Stormtrooper />
   </Layout>
 
 export default App
