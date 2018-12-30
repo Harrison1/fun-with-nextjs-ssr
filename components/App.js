@@ -23,7 +23,6 @@ const App = props =>
     <ToggleDrawer />
     <Person />
     <DarthVader />
-    <Book />
     <BobaFett />
     <DeathStar />
     <ATAT />
