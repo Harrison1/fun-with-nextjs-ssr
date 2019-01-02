@@ -26,7 +26,6 @@ const App = props =>
     <BobaFett />
     <DeathStar />
     <ATAT />
-    <R2D2 />
     <MillenniumFalcon />
   </Layout>
 
