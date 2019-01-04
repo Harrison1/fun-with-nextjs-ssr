@@ -24,7 +24,6 @@ const App = props =>
     <Person />
     <DarthVader />
     <BobaFett />
-    <DeathStar />
     <ATAT />
     <MillenniumFalcon />
   </Layout>
