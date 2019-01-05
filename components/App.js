@@ -21,7 +21,6 @@ const App = props =>
     <Blogroll posts={ props.posts } />
     <Drawer />
     <ToggleDrawer />
-    <Person />
     <DarthVader />
     <BobaFett />
     <ATAT />
