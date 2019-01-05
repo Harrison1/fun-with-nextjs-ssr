@@ -24,7 +24,6 @@ const App = props =>
     <DarthVader />
     <BobaFett />
     <ATAT />
-    <MillenniumFalcon />
   </Layout>
 
 export default App
