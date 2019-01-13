@@ -23,7 +23,6 @@ const App = props =>
     <ToggleDrawer />
     <DarthVader />
     <BobaFett />
-    <ATAT />
     <R2D2 />
   </Layout>
 
