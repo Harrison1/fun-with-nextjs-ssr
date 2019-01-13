@@ -23,7 +23,6 @@ const App = props =>
     <ToggleDrawer />
     <DarthVader />
     <BobaFett />
-    <R2D2 />
   </Layout>
 
 export default App
