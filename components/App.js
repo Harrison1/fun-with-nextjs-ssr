@@ -22,7 +22,6 @@ const App = props =>
     <Drawer />
     <ToggleDrawer />
     <DarthVader />
-    <ATAT />
   </Layout>
 
 export default App
