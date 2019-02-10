@@ -21,6 +21,7 @@ const App = props =>
     <Blogroll posts={ props.posts } />
     <Drawer />
     <ToggleDrawer />
+    <ATAT />
   </Layout>
 
 export default App
