@@ -22,6 +22,7 @@ const App = props =>
     <Drawer />
     <ToggleDrawer />
     <MillenniumFalcon />
+    <Stormtrooper />
   </Layout>
 
 export default App
