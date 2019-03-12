@@ -26,7 +26,7 @@ const images = [
 const FeatureRow = ({ features }) =>
   <div className='wrapper'>
     {features.map(i =>
-      <article>
+      <article key={i.id}>
         <a href={i.link}>
           <div>
             <img src={i._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url} alt={i.title.rendered}/>

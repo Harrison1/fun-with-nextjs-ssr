@@ -5,7 +5,7 @@ const BlankBackground = ({ onClick, show }) =>
   ? <div onClick={ onClick }>
       <style jsx>{`
         div {
-          background: rgba(0, 0, 0, 0.3);
+          background: rgba(0, 0, 0, 0.8);
           height: 100%;
           left: 0;
           position: fixed;
